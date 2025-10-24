@@ -42,8 +42,31 @@ $members = $conn->query("SELECT * FROM members WHERE created_by='$user_name_esc'
 body{font-family:Arial;background:url('GYM.jpg');background-size:cover;display:flex;justify-content:center;align-items:flex-start;min-height:100vh;margin:0;padding-top:30px}
 .dashboard-box{background:white;padding:30px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.2);width:450px;text-align:center}
 h2{color:#2c5364;margin-bottom:15px}
-input,select{width:95%;padding:10px;margin:8px 0;border:1px solid #ccc;border-radius:5px}
-button{width:95%;padding:10px;margin-top:10px;background:#2c5364;color:#fff;border:none;border-radius:5px}
+input, select {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+button {
+  width: 50%;       /* smaller than inputs */
+  padding: 10px;
+  margin-top: 10px;
+  background: #2c5364; /* keep original color */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+button:hover {
+  background: #1e3c72; /* original hover color */
+}
+
 .msg{margin:10px 0;font-weight:bold;color:green}
 table{width:100%;border-collapse:collapse;margin-top:20px;font-size:14px}
 th,td{border:1px solid #ddd;padding:8px}
